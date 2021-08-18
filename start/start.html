@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TmaxTowerEscape</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../helpLabel/modal.css" />
+    <style>
+      .help-main-img {
+        position: absolute;
+        top: 5vh;
+        right: 10vh;
+        cursor: pointer;
+      }
+
+      .help-main-img > img {
+        width: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio id="myAudio" autoplay>
+      <source src="op.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div id="main_frame">
+      <div class="help-main-img">
+        <img src="question.png" alt="none" onclick="showModal()" />
+      </div>
+
+      <img id="logo2" src="tgamelogo.png" />
+      <div id="qwer">
+        <button onclick="location.href='../7f/test1.html'">start</button>
+        <button onclick="location.href='help.html'">story</button>
+        <button onclick="location.href='../index.html'">exit</button>
+      </div>
+    </div>
+
+    <div id="modal">
+      <div id="modalCloseBtn" onclick="delModal()">
+        <img src="../helpLabel/delIcon.png" alt="none" />
+      </div>
+      <div id="modalBody">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+
+        <div id="modalBody-slider">
+          <img src="test1.jpg" alt="none" />
+          <img src="test2.jpg" alt="none" />
+          <img src="test3.jpg" alt="none" />
+        </div>
+
+        <div id="modalBody-slider-holder">
+          <a href="#slide-1" class="slide-change"></a>
+          <a href="#slide-2" class="slide-change"></a>
+          <a href="#slide-3" class="slide-change"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../helpLabel/modal.js"></script>
+  </body>
+</html>
